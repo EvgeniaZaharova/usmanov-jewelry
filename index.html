@@ -17,8 +17,8 @@
             --gold: #d4af37;           /* классическое золото */
             --gold-light: #f3e5ab;     /* светло-золотой для текста на темном */
             --gold-pale: #e6c96b;      /* мягкое золото */
-            --text-white: #f5f7fa;
-            --text-muted: #aab4cc;
+            --text-white: #ffffff;     /* <-- ИЗМЕНЕНО: было #f5f7fa, стало чисто белым */
+            --text-muted: #ffffff;     /* <-- ИЗМЕНЕНО: было #aab4cc (голубой), стало белым, но с прозрачностью ниже */
             --border-gold: rgba(212, 175, 55, 0.4);
         }
 
@@ -81,7 +81,7 @@
 
         .subtitle {
             font-size: 1.15rem;
-            color: var(--text-muted);
+            color: rgba(255, 255, 255); 
             margin-top: 6px;
             font-weight: 300;
             letter-spacing: 0.08em;
@@ -135,7 +135,7 @@
             max-width: 750px;
             margin: 0 auto;
             font-size: 1.05rem;
-            color: #d5dceb;
+            color: #ffffff; /* <-- ИЗМЕНЕНО: было #d5dceb, стало чисто белым */
             line-height: 1.8;
         }
 
@@ -176,33 +176,33 @@
         }
 
         .master-card p {
-            color: var(--text-muted);
+            color: rgba(255, 255, 255, 0.7); /* <-- ИЗМЕНЕНО: было var(--text-muted), стало белым с прозрачностью для мягкости */
             font-size: 0.98rem;
         }
-		
-		.master-icon {
-			width: 70px;
-			height: 70px;
-			object-fit: contain;
-			display: block;
-			margin: 0 auto;
-			transition: transform 0.3s ease;
-		}
+        
+        .master-icon {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+        }
 
-		.master-card:hover .master-icon {
-			transform: scale(1.1);
-		}
+        .master-card:hover .master-icon {
+            transform: scale(1.1);
+        }
 
-		/* Если хотите круглые иконки */
-		.master-icon-round {
-			width: 70px;
-			height: 70px;
-			object-fit: cover;
-			border-radius: 50%;
-			border: 2px solid var(--gold);
-			display: block;
-			margin: 0 auto;
-		}		
+        /* Если хотите круглые иконки */
+        .master-icon-round {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid var(--gold);
+            display: block;
+            margin: 0 auto;
+        }       
 
         /* Секция услуг / философии */
         .philosophy-section {
@@ -232,7 +232,7 @@
             border-radius: 40px;
             padding: 10px 24px;
             font-size: 0.95rem;
-            color: var(--gold-light);
+            color: #ffffff; /* <-- ИЗМЕНЕНО: было var(--gold-light), стало чисто белым */
             letter-spacing: 0.03em;
             transition: 0.3s;
         }
@@ -257,7 +257,7 @@
         }
 
         .contact-intro {
-            color: var(--text-muted);
+            color: rgba(255, 255, 255, 0.8); /* <-- ИЗМЕНЕНО: белый с прозрачностью для мягкости */
             margin-bottom: 32px;
             font-size: 1.05rem;
         }
@@ -275,7 +275,7 @@
             gap: 10px;
             background: transparent;
             border: 1.5px solid var(--gold);
-            color: var(--gold-light);
+            color: #ffffff; /* <-- ИЗМЕНЕНО: было var(--gold-light), стало чисто белым */
             padding: 14px 28px;
             border-radius: 50px;
             font-size: 1rem;
@@ -335,7 +335,7 @@
             text-align: center;
             border-top: 1px solid rgba(212, 175, 55, 0.2);
             background-color: var(--navy-deep);
-            color: var(--text-muted);
+            color: rgba(255, 255, 255, 0.7); /* <-- ИЗМЕНЕНО: белый с прозрачностью */
             font-size: 0.9rem;
             letter-spacing: 0.03em;
         }
@@ -403,9 +403,9 @@
                 </p>
                 <div class="masters-grid">
                     <div class="master-card">
-						<div class="icon">
-							<img src="images/site/icon-jewelry-5705532.png" alt="Алексей Усманов" class="master-icon-round">
-						</div>
+                        <div class="icon">
+                            <img src="images/site/icon-jewelry-5705532.png" alt="Алексей Усманов" class="master-icon-round">
+                        </div>
                         <h3>Алексей Усманов</h3>
                         <p>...</p>
                     </div>
@@ -424,7 +424,7 @@
                     <span class="phil-item">✨ Индивидуальные заказы</span>
                     <span class="phil-item">💍 Обручальные кольца</span>
                     <span class="phil-item">🎨 3D-моделирование</span>
-					<span class="phil-item">📿 Гравировка</span>
+                    <span class="phil-item">📿 Гравировка</span>
                     <span class="phil-item">🏅 И многое другое</span>
                 </div>
             </section>
